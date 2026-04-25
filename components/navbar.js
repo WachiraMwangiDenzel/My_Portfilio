@@ -28,8 +28,8 @@ export default function navbar() {
           <Image src="/avatar.jpg" alt="..." width={50} height={50} className='rounded-lg  ' />
         </div>
         <div className='flex flex-col space-y-1 mr-3 rounded-xl hover:bg-blue-950 hover:transition-colors p-1 '>
-          <Moon className=' hover:text-white '/>
-          <Sun className='hover:text-white hover:translate-y-2'/>
+          <Moon className='hover:cursor-pointer hover:text-white '/>
+          <Sun className='hover:cursor-pointer hover:text-white hover:translate-y-2'/>
         </div>
       </div>
     </div>
