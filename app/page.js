@@ -1,11 +1,14 @@
 import React from 'react'
-import Navbar from '@/components/navbar'
-import MiniNav from '@/components/miniNav'
+// import Sidebar from '../components/sidebar'
+import Navbar from '../components/navbar'
+
 export default function page() {
   return (
-    <div className=" bg-white text-black font-medium min-h-screen ">
-      <Navbar />
-      <MiniNav />
+    <div className='min-h-screen bg-gray-200 text-black w-full'>
+      <div>
+        <Navbar />
+      </div>
+      {/* <Sidebar /> */}
     </div>
   )
 }

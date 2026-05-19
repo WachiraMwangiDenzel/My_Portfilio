@@ -1,39 +1,39 @@
-import { CodeXml, Moon, Sun } from 'lucide-react'
-import React from 'react'
 import Image from 'next/image'
+import { CodeXml, Moon, MousePointer2, Sun } from 'lucide-react'
+import React from 'react'
 
 export default function navbar() {
   return (
-    <div className='  flex items-center justify-between px-3 py-4  bg-gray-100'>
-      <div className='flex items-center space-x-4 hover:animate-bounce'>
-        <div className='border-2 border-white shadow-lg transition-transform duration-600 hover:rotate-360 p-2 ml-3 '>
-      <CodeXml  strokeWidth={2} color="#1c6ae8" size={34} />
+    <div className='flex justify-between items-center p-1 bg-gray-300 text-black font-base text-md max-w-full'>
+        <div className='flex items-center gap-2 ml-2'>
+            <p className='border border-white shadow-md p-2 hover:rotate-180'>
+                <CodeXml size={28} />
+            </p>
+            <div>
+            <h2 className='flex flex-col leading-tight font-black text-lg'>Portfolio</h2>
+            <p className='text-gray-500 text-sm '>Front-end Developer</p>
+            </div>
         </div>
-      <div className=''>
-        <h1 className='text-xl font-semibold'>Portfolio</h1>
-      </div>
-    </div>
-    <div className='border-2 inline-block border-gray-500 bg-gray-50 rounded border-dashed gray px-auto  py-2 font-semibold'>
-      <p className='ml-2 mr-2 text-gray-500'> Currently Viewing :<span className='muppercase l-2 mr-2 text-green-500'>Project 1</span></p>
-    </div>
-    <div>
-      <p>10+ Design Projects</p>
-    </div>
-      <div className='flex items-center justify-between space-x-8'>
-        <div className=''>
-         <p className='ml-9'> Denzel Mwangi</p>
-                <p className='text-base text-gray-400 '>Front-End Developer</p>
+        <div className='flex justify-center gap-1 border border-dashed border-blue-600 p-2 rounded-md shadow-md '>
+           <p>Currently Viewing:</p>
+            <p className='text-blue-600'>Dashboard</p> 
         </div>
-        <div className=''>
-          <Image src="/avatar.jpg" alt="..." width={50} height={50} className='rounded-lg  ' />
+        <div className='text-blue-500 text-lg '>
+            <p>3+ Designs In One Portfolio</p>
         </div>
-        <div className='flex flex-col space-y-1 mr-3 rounded-xl hover:bg-blue-950 hover:transition-colors p-1 '>
-          <Moon className='hover:cursor-pointer hover:text-white '/>
-          <Sun className='hover:cursor-pointer hover:text-white hover:translate-y-2'/>
+        <div className='flex gap-4 items-center mr-4'>
+            <div className='flex gap-1 items-center text-sm border border-dashed border-blue-500 text-blue-500 p-1 shadow-md shadow-blue-500/50'>
+                <MousePointer2 size={16} />
+                <a href='#' className=''>Click to View One Page Portfolio</a>
+            </div>
+            <div className='flex items-center gap-1 border border-dashed border-gray-600 p-1 rounded-md shadow-md bg-blue-100'>
+            <Image src="/avatar.jpg" alt="Avatar" width={40} height={40} className=' w-auto h-auto rounded-sm' />
+            </div>
+            <div className=''>
+                <Moon size={25}/>
+                {/* <Sun /> */}
+            </div>
         </div>
-      </div>
     </div>
-
   )
 }
-
