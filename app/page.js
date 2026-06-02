@@ -6,19 +6,19 @@ import QuickAccess from '../components/quickAcces'
 
 export default function page() {
   return (
-    <div className='flex flex-col min-h-screen bg-gray-200 text-black w-full'>
-        <Navbar />
+    <div className=''>
+        {/* <Navbar /> */}
         {/* main container */}
-      <div  className='flex flex-1 overflow-hidden'>
+      {/* <div  className='flex flex-1 overflow-hidden'>
       <div className='  bg-gray-200'>
       <Sidebar />
-      </div>
+      </div> */}
       <main className='overflow-y-auto flex-1 p-4 bg-gray-100'>
         <Intro />
         <div className='w-full border-t border-gray-300 p-1'></div>
         <QuickAccess />
       </main>
       </div>
-    </div>
+    // </div>
   )
 }
