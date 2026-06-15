@@ -14,14 +14,10 @@ export default function navbar() {
             className='border border-white shadow-md p-2 hover:rotate-180'>
                 <CodeXml size={28} />
             </p>
-            <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.2, ease: "easeInOut"  }}
-            >
+            <div>
             <h2 className='flex flex-col leading-tight font-black text-lg'>Portfolio</h2>
             <p className='text-gray-500 text-sm '>Front-end Developer</p>
-            </motion.div>
+            </div>
         </div>
         <div className='flex justify-center gap-1 border border-dashed border-blue-600 p-2 rounded-md shadow-md '>
            <p>Currently Viewing:</p>
@@ -36,7 +32,8 @@ export default function navbar() {
                 <a href='#' className=''>Click to View One Page Portfolio</a>
             </div>
             <div className='flex items-center gap-1 border border-dashed border-gray-600 p-1 rounded-md shadow-md bg-blue-100'>
-            <Image src="/avatar.jpg" alt="Avatar" width={40} height={40} className=' w-auto h-auto rounded-sm' />
+            <Image src="/avatar.jpg" alt="Avatar" width={40} height={40} priority
+            className=' w-auto h-auto rounded-sm' />
             </div>
             <div className=''>
                 <Moon size={25}/>

@@ -6,7 +6,7 @@ import { FaCss } from 'react-icons/fa6'
 
 export default function intro() {
   return (
-    <div className=' ml-4 mt-4 flex flex-row mb-2'>
+    <div className=' ml-4 mt-4 flex flex-row mb-4'>
         <div className='flex flex-col gap-4 w-70'>
             <Image src="/Potrait.jpg" alt="Hi There! Image Still Loading...." width={200} height={200} className=' w-65 h-65 rounded-lg mt-6' />
         

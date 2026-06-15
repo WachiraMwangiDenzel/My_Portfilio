@@ -11,7 +11,7 @@ export default function quickAccessCards({
     icon: Icon,
 }) {
     return (
-        <Link href={href} className='bg-gray-200 flex flex-col-2 gap-4 lg:gap-6 sm:gap-2 md:p-4 lg:p-6 border border-dashed border-gray-300 rounded-xl mt-3 cursor-pointer md:w-fit lg:w-sm items-center shadow:lg hover:-translate-y-1.5 transition duration-300-all '>
+        <Link href={href} className='bg-gray-200 flex-shrink-1 flex flex-col-2 gap-4 lg:gap-6 sm:gap-2 md:p-4 lg:p-6 border border-dashed border-gray-300 rounded-xl mt-3 cursor-pointer md:w-fit lg:w-sm items-center shadow:lg hover:-translate-y-1.5 transition duration-300-all '>
             <div className='lg:ml-7 flex flex-col gap-6'>
                 <h1>{title}</h1>
                 <p className='text-6xl  font-bold'>{count}
