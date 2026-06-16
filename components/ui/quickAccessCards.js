@@ -1,8 +1,7 @@
-
 import Link from 'next/link'
 import React from 'react'
 
-export default function quickAccessCards({
+export default function QuickAccessCards({
     href,
     title,
     count,
@@ -11,16 +10,39 @@ export default function quickAccessCards({
     icon: Icon,
 }) {
     return (
-        <Link href={href} className='bg-gray-200 flex-shrink-1 flex flex-col-2 gap-4 lg:gap-6 sm:gap-2 md:p-4 lg:p-6 border border-dashed border-gray-300 rounded-xl mt-3 cursor-pointer md:w-fit lg:w-sm items-center shadow:lg hover:-translate-y-1.5 transition duration-300-all '>
-            <div className='lg:ml-7 flex flex-col gap-6'>
-                <h1>{title}</h1>
-                <p className='text-6xl  font-bold'>{count}
-                    <i className='text-base font-normal ml-2 not-italic'>{countDescription}</i>
+        <Link
+            href={href}
+            className="flex items-center gap-4 p-4 lg:p-6 mt-3 w-full max-w-sm bg-white border border-dashed border-gray-300 rounded-xl shadow-lg cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
+        >
+            {/* TEXT */}
+            <div className="flex flex-col gap-3">
+                <h1 className="text-black text-lg">
+                    {title}
+                </h1>
+
+                <p className="text-4xl lg:text-6xl font-bold">
+                    {count}
+                    <span className="ml-2 text-sm font-normal">
+                        {countDescription}
+                    </span>
                 </p>
-                <p className='mt-3 text-sm whitespace-nowrap overflow-hidden'>{description}</p>
+
+                <p className="text-sm  max-w-[220px]">
+                    {description}
+                </p>
             </div>
-            <div className='flex items-center p-2 bg-gray-300 rounded-lg shadow-lg hover: rotate-y-3 '>
-                <Icon className='lg:w-20 lg:h-20 md:h-12 lg:h-12' />
+
+            {/* ICON */}
+            <div className="
+                flex items-center justify-center
+                p-3
+                bg-gray-300
+                rounded-lg
+                shadow-md
+                transition-transform duration-300
+                hover:rotate-3 hover:scale-110
+            ">
+                <Icon className="w-10 h-10 lg:w-16 lg:h-16" />
             </div>
         </Link>
     )

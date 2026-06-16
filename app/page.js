@@ -6,11 +6,13 @@ import ProjectSection from '@/components/ProjectSection'
 export default function page() {
   return (
     <div className='min-h-full flex-1 flex flex-col scroll-smooth'>
-      <main className='overflow-y-auto flex-1 p-4 bg-gray-300'>
+      <main className='overflow-y-auto flex-1 p-4 bg-gray-200'>
         <Intro />
-        <div className='w-full border-t border-gray-300 p-1'></div>
+        <div className='w-full border-t border-dashed border-gray-500 p-1'></div>
         <QuickAccess />
+        <div className='w-full border-t border-dashed border-gray-500 p-1'></div>
         <ProjectSection/>
+        <div className='w-full border-t border-dashed border-gray-500 p-1'></div>
       </main>
       </div>
   )

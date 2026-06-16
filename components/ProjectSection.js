@@ -9,7 +9,7 @@ const projects = [
 ];
 export default function ProjectSection() {
     return (
-        <div className='text-gray-700 my-8 mx-5  '>
+        <div className='text-gray-700 mb-8 mx-5  '>
             <h1 className='text-xl font-normal mb-6'>Projects </h1>
 
             <div className='bg-white w-full m-4 border border-dashed'>
