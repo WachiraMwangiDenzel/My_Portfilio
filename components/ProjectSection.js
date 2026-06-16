@@ -10,7 +10,10 @@ const projects = [
 export default function ProjectSection() {
     return (
         <div className='text-gray-700 mb-8 mx-5  '>
-            <h1 className='text-xl font-normal mb-6'>Projects </h1>
+            <h1 className='mb-6 border-l-2 border-blue-500'>
+                THE PROJECTS BELOW REPRESENT THE FOUNDATION OF MY DEVELOPMENT JOURNEY — A COLLECTION OF EARLY WORK THAT REFLECTS MY GROWTH, CURIOSITY, AND COMMITMENT TO IMPROVING WITH EVERY BUILD. DATE: 16 JUNE 2026
+            </h1>
+            
 
             <div className='bg-white w-full m-4 border border-dashed'>
                 <table className=' border-separate border-spacing-y-2 w-full p-6'>
