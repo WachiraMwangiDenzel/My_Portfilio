@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
 import Sidebar from "@/components/sideBar";
+import MiniNav from "@/components/MiniNav";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
           </div>
 
           <main className="ml-64 flex-1 overflow-auto border border-r border-blue-500">
+            <MiniNav />
             {children}
           </main>
         </div>

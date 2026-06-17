@@ -1,37 +1,42 @@
 
 export const getRoute = (pathname) => {
-    if (pathname.startswith("/projects")) {
-    return{
-        title: "Projects",
-        Subhead: "My Work",
-};
-}
-if (pathname.startswith("/skills")) {
-    return{
-        title: "skills",
-        Subhead: "My Work",
-};
-}
-if (pathname.startswith("/education")) {
-    return{
-        title: "Projects",
-        Subhead: "My Work",
-};
-}
-if (pathname.startswith("/experience")) {
-    return{
-        title: "Professional Experience",
-        Subhead: "Career Journey and Roles",
-};
-}
-if (pathname.startswith("/contact")) {
-    return{
-        title: "contact",
-        Subhead: "Get In Touch",
-};
-}
+    if (pathname.startsWith("/projects")) {
   return {
-    title: "DashBoard",
-    Subhead: "Overview",
-  }
+    title: "Projects",
+    subhead: "A Showcase of My Work and Practical Implementations",
+  };
+}
+
+if (pathname.startsWith("/skills")) {
+  return {
+    title: "Skills",
+    subhead: "Technologies and Tools I Use to Build Solutions",
+  };
+}
+
+if (pathname.startsWith("/education")) {
+  return {
+    title: "Education",
+    subhead: "Academic Background and Continuous Learning Journey",
+  };
+}
+
+if (pathname.startsWith("/experience")) {
+  return {
+    title: "Professional Experience",
+    subhead: "Career Journey, Roles, and Real-World Impact",
+  };
+}
+
+if (pathname.startsWith("/contact")) {
+  return {
+    title: "Contact",
+    subhead: "Let’s Connect and Collaborate",
+  };
+}
+
+return {
+  title: "Dashboard",
+  subhead: "Overview of My Portfolio and Activities",
 };
+}

@@ -5,6 +5,7 @@ import { FaGithub, FaHtml5, FaLinkedin, FaNodeJs, FaReact, FaTwitter } from 'rea
 import { FaCss } from 'react-icons/fa6'
 
 const socialLinks = [
+
     { id: '1', href: 'https://github.com/WachiraMwangiDenzel/LofftyPixel', icon: FaGithub, title: 'Github' },
     { id: '2', href: 'ttps://linkedin.com/in/denzel-mwangi', icon: FaLinkedin, title: 'LinkedIn' },
     { id: '3', href: 'https://twitter.com/DenzelMwangi', icon: FaTwitter, title: 'Twiter' }
@@ -19,7 +20,7 @@ const skillIcon = [
 
 export default function intro() {
     return (
-        <div className=' ml-4 mt-4 flex flex-row mb-6'>
+        <div className=' ml-4 mt-2 flex flex-row mb-6'>
             <div className='flex flex-col gap-4 w-70'>
                 <Image src="/Potrait.jpg" alt="Hi There! Image Still Loading...."
                     width={200} height={200}
