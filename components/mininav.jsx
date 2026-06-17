@@ -13,8 +13,8 @@ export default function MiniNav() {
 
   return (
     <div className='bg-gray-100 text-gray-600 flex pt-6 justify-between  pb-2 pr-2 md:px-4 lg:px-6 items-center'>
-      
-      
+
+
 
       {/* Mini Nav Content */}
       <div className=' flex gap-4 items-center'>
@@ -26,14 +26,14 @@ export default function MiniNav() {
 
         <div>
           <h1 className='text-lg text-black'>
-          {currentRoute.title}
-        </h1>
+            {currentRoute.title}
+          </h1>
 
-        <p className='ml-3 text-blue-500'>
-          {currentRoute.subhead}
-        </p>
+          <p className='ml-3 text-blue-500'>
+            {currentRoute.subhead}
+          </p>
         </div>
-        
+
       </div>
 
       {/* Download Cv Button on Mobile Viewport */}
