@@ -24,7 +24,7 @@ export default function intro() {
                 <Image src="/Potrait.jpg" alt="Hi There! Image Still Loading...."
                     width={200} height={200}
                     priority
-                    className=' w-65 h-65 rounded-lg mt-6' 
+                    className=' w-65 h-65 rounded-lg mt-6'
                 />
 
                 <div className='flex gap-4 text-lg text-black items-center justify-center-safe'>
@@ -33,12 +33,12 @@ export default function intro() {
                         const Icon = social.icon;
 
                         return (
-                            <a 
-                            key={social.id}
-                            href={social.href}
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            className='bg-white text-gray-700 border border-dashed border-gray-700 rounded-lg p-1 hover:text-white hover:bg-blue-500 hover:-translate-y-1 transition-all duration-300 '>
+                            <a
+                                key={social.id}
+                                href={social.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className='bg-white text-gray-700 border border-dashed border-gray-700 rounded-lg p-1 hover:text-white hover:bg-blue-500 hover:-translate-y-1 transition-all duration-300 '>
                                 <Icon size={30} />
                             </a>
                         )
