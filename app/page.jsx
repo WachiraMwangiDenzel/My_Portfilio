@@ -11,8 +11,8 @@ export default function page() {
         <div className='w-full border-t border-dashed border-gray-500 p-1'></div>
         <QuickAccess />
         <div className='w-full border-t border-dashed border-gray-500 p-1'></div>
-        <ProjectSection/>
+        <ProjectSection />
       </main>
-      </div>
+    </div>
   )
 }
