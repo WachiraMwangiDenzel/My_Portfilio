@@ -17,10 +17,10 @@ export default function QuickAcces() {
 
             <div className='flex justify-between mb-3 items-center w-full p-2 text-lg'>
                 <h1 className='border-l-2 border-blue-500'>Quick Access</h1>
-                <p>Click Card To Navigate</p>
+                <p className='text-sm md:text-lg'>Click Card To Navigate</p>
             </div>
 
-            <div className='grid grid-cols-4 gap-8 items-center w-full p-2 text-xl ml-3'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center w-full p-2 text-xl ml-3'>
                 {cards.map((card) => (
                     <QuickAccessCards
                         key={card.id}
