@@ -13,7 +13,7 @@ const links = [
 
 export default function sideBar() {
   return (
-    <div className='p-4 w-58  h-full flex justify-between flex-col '>
+    <div className='p-4 md:w-58  h-full flex justify-between flex-col '>
       <div className='flex  flex-col gap-2 text-base font-md mt-4 text-gray-700 '>
         {links.map((link) => {
           const Icon = link.icon;
