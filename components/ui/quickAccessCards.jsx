@@ -12,8 +12,7 @@ export default function QuickAccessCards({
     return (
         <Link
             href={href}
-            className="flex items-center gap-4 p-4 lg:p-6 mt-3 w-full max-w-sm bg-white border border-dashed border-gray-300 rounded-xl shadow-lg cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
-        >
+            className="flex items-center gap-4 p-4 lg:p-6 mt-3 w-full max-w-sm bg-white border border-dashed border-gray-300 rounded-xl shadow-lg cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl">
             {/* TEXT */}
             <div className="flex flex-col gap-3">
                 <h1 className="text-black text-lg">
@@ -27,7 +26,7 @@ export default function QuickAccessCards({
                     </span>
                 </p>
 
-                <p className="text-sm  max-w-[220px]">
+                <p className="text-sm max-w-[220px]">
                     {description}
                 </p>
             </div>

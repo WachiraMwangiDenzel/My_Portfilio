@@ -1,19 +1,18 @@
-"use client";
-import React from 'react';
+'use client'
+import React from 'react'
 
-import { Download, Hamburger } from 'lucide-react';
-import { getRoute } from './Config/getRoute';
-import { usePathname } from 'next/navigation';
+import { getRoute } from './Config/getRoute'
+import { Hamburger, Download } from 'lucide-react'
+import { usePathname } from 'next/navigation'
 
-
-export default function MiniNav() {
-  const pathname = usePathname();
-  const currentRoute = getRoute(pathname);
-
-
+export default function miniNav() {
+        const pathname = usePathname();
+        const currentRoute = getRoute(pathname);
+        
   return (
-    <div className='bg-gray-100 text-gray-600 flex pt-6 justify-between  pb-2 pr-2 md:px-4 lg:px-6 items-center'>
+        
 
+    <div className='bg-gray-100 text-gray-600 flex pt-6 justify-between  pb-2 pr-2 md:px-4 lg:px-6 items-center'>
 
 
       {/* Mini Nav Content */}
@@ -43,5 +42,5 @@ export default function MiniNav() {
         </a>
       </div>
     </div>
-  )
+  );
 }
