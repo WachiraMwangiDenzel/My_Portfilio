@@ -32,15 +32,7 @@ export default function QuickAccessCards({
             </div>
 
             {/* ICON */}
-            <div className="
-                flex items-center justify-center
-                p-3
-                bg-gray-300
-                rounded-lg
-                shadow-md
-                transition-transform duration-300
-                hover:rotate-3 hover:scale-110
-            ">
+            <div className="flex items-center justify-center  p-3 bg-gray-300 rounded-lg shadow-md transition-transform duration-300 hover:rotate-3 hover:scale-110">
                 <Icon className="w-10 h-10 lg:w-16 lg:h-16" />
             </div>
         </Link>
