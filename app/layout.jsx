@@ -1,6 +1,6 @@
 import Navbar from "@/components/navbar";
 import Sidebar from "@/components/sideBar";
-import MiniNav from "@/components/miniNav";
+import MiniNav from "@/components/MiniNav";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
