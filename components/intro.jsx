@@ -68,8 +68,8 @@ export default function intro() {
                     </p>
                 </div>
                 <div>
-                    <p className='flex text-center text-lg md:text-xl text-gray-700 w-full md:w-200'>
-                        I’m a Front-End Developer focused on building clean, responsive, and user-friendly web experiences. I enjoy turning ideas into interactive interfaces using modern technologies, and I’m constantly learning to improve my craft. <span className=' hidden '>My goal is to create designs that not only look good but also solve real-world problems efficiently.</span>
+                    <p className='flex text-center text-lg md:text-xl text-gray-700 w-full md:w-200 '>
+                        I’m a Front-End Developer focused on building clean, responsive, and user-friendly web experiences. I enjoy turning ideas into interactive interfaces using modern technologies, and I’m constantly learning to improve my craft. <span className=' md:block hidden '>My goal is to create designs that not only look good but also solve real-world problems efficiently.</span>
                     </p>
                     <div className='md:block hidden flex gap-2 mt-4 flex-wrap'>
                         {skillIcon.map((skill) => {
