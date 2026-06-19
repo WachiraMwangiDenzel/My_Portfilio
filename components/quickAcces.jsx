@@ -20,7 +20,7 @@ export default function QuickAcces() {
                 <p className='text-sm md:text-lg'>Click Card To Navigate</p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center w-full p-2 text-xl ml-3'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8  w-full p-2 text-xl ml-3 justify-items-center'>
                 {cards.map((card) => (
                     <QuickAccessCards
                         key={card.id}
