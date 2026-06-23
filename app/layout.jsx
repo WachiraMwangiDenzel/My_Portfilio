@@ -32,12 +32,12 @@ export default function RootLayout({ children }) {
         </div>
 
         <div className="pt-16 flex min-h-screen">
-          <div className="hidden fixed left-0 top-16 bottom-0 md:w-64 overflow-y-auto bg-gray-200">
+          <div className="hidden md:grid fixed left-0 top-16 bottom-0 lg:w-64 overflow-y-auto bg-gray-200">
             <Sidebar />
           </div>
 
-          <main className="md:ml-64 flex-1 overflow-auto border border-r border-blue-500">
-            <div className="fixed inset-x-0 md:ml-64"> 
+          <main className="lg:ml-64 md:ml-12 flex-1 overflow-auto border border-r border-blue-500">
+            <div className="fixed inset-x-0 lg:ml-64 md:ml-14.5"> 
               <MiniNav />
             </div>
             <div className="">

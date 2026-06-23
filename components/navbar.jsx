@@ -23,36 +23,40 @@ export default function Navbar() {
     <div className="flex justify-between items-center p-1 bg-gray-300 text-black text-md w-full">
 
       {/* LEFT */}
-      <Link href="/" 
-      className="flex items-center gap-2 ml-2">
+      <Link href="/"
+        className="flex items-center gap-2 ml-2">
         <p className="border border-white shadow-md p-2 transition-transform duration-300 hover:rotate-180">
           <CodeXml size={28} />
         </p>
 
         <div>
-          <h2 className="leading-tight font-black text-lg">Portfolio</h2>
+          <h2 className="leading-tight font-black font-sans text-lg">Portfolio</h2>
           <p className="text-gray-500 text-sm">Front-end Developer</p>
         </div>
       </Link>
 
       {/* CENTER - CURRENT VIEW */}
-      <div className="hidden md:block flex justify-center gap-1 border border-dashed border-blue-600 p-2 rounded-md shadow-md">
-        <p>Currently Viewing:</p>
-        <p className="text-blue-600 font-medium">
-          {formatPath(pathname)}
-        </p>
+      <div className="hidden md:block">
+        <div className="  flex justify-center gap-1 border border-dashed border-blue-600 p-2 rounded-md shadow-md">
+          <p>Currently Viewing:</p>
+          <p className="text-blue-600 font-medium">
+            {formatPath(pathname)}
+          </p>
+        </div>
       </div>
 
       {/* RIGHT INFO */}
-      <div className="hidden md:block text-blue-500 text-lg">
-        <p>3+ Designs In One Portfolio</p>
+      <div className="hidden md:block">
+        <div className="hidden lg:block text-blue-500 text-lg">
+          <p>3+ Designs In One Portfolio</p>
+        </div>
       </div>
 
       {/* ACTIONS */}
       <div className="flex gap-2 md:gap-4 items-center mr-4">
-        
+
         <div className="hidden md:block flex gap-1 items-center text-sm border border-dashed border-blue-500 text-blue-500 p-1 shadow-md shadow-blue-500/50">
-          <MousePointer2 size={16} />
+          <MousePointer2 size={16} hidden />
           <a href="#">Click to View One Page Portfolio</a>
         </div>
 

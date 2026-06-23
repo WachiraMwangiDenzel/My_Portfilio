@@ -13,8 +13,10 @@ const links = [
 
 export default function sideBar() {
   return (
-    <div className='p-4 md:w-58  h-full flex justify-between flex-col '>
-      <div className='flex  flex-col gap-2 text-base font-md mt-4 text-gray-700 '>
+    <div className='flex flex-col flex-1 justify-between items-center text-gray-900 pb-4 md:pt-30 lg:pt-24 md:px-2 px-6 w-fit max-w-64 bg-white '>
+
+      {/* Large Viewport */}
+      <div className='flex flex-col gap-4 '>
         {links.map((link) => {
           const Icon = link.icon;
 
@@ -22,17 +24,19 @@ export default function sideBar() {
             <Link
               key={link.id}
               href={link.href}
-              className='flex gap-2 items-center ml-6 p-4 rounded-sm hover:bg-blue-100 hover:transition-all ease-in-out hover:transalte-x-2 hover:text-black hover:border-l-2 '>
-
-              < Icon size={25} className='hover:text-blue-500 hover:' />
-              {link.title}
+              className='flex flex-row gap-6 w-fit justify-items-center p-2 '>
+              < Icon size={25} />
+              <div className='hidden lg:block'>
+                {link.title}
+              </div>
             </Link>
           )
         })}
       </div>
 
+
       {/*  */}
-      <div className="mt-6 p-4 border border-dashed border-gray-400 rounded-lg text-sm">
+      <div className="hidden lg:block mt-6 p-4 border border-dashed border-gray-400 rounded-lg text-sm">
         <p className="font-semibold text-gray-800">Status</p>
 
         <p className="text-green-600 mt-1">

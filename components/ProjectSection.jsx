@@ -28,13 +28,13 @@ export default function ProjectSection() {
 
 
             <div className='bg-white w-full m-4 border border-dashed'>
-                <table className=' border-separate border-spacing-y-2  p-6'>
+                <table className=' border-separate border-spacing-y-2  p-6 md:w-full lg:w-full max-w-screen'>
                     <thead className='text-gray-700 border border-dashed border-gray-500 items-center'>
                         <tr className='bg-blue-200 h-10 m-2 border w-full'>
                             <th className='border-y border-dashed border-black text-left first:pl-6'>Name</th>
                             <th className='hidden md:table-cell border-y border-dashed border-black text-center'>Category</th>
                             <th className='hidden lg:table-cell border-y border-dashed border-black text-center'>Technology</th>
-                            <th className='border-y border-dashed border-black text-right last:pr-6'>Action</th>
+                            <th className='border-y border-dashed border-black text-right md:last:pr-12 last:pr-6'>Action</th>
                         </tr>
                     </thead>
                     <tbody className='text-left'>
@@ -56,10 +56,10 @@ export default function ProjectSection() {
                                 <td className='hidden lg:table-cell text-center'>{project.technology} </td>
 
                                 <td className='hidden md:table-cell text-right last:pr-6'>
-                                    <a href="#" className="text-sm md:text-base p-2 border border-dashed border-gray-600 text-black hover:bg-blue-500 transition-all transition-duration-350 hover:border-blue-500 hover:shdow-lg hover:-translate-y-1">View Details</a>
+                                    <a href="#" className="text-sm md:text-base p-2 border border-dashed border-gray-600 text-black hover:bg-blue-500 transition-all transition-duration-350 hover:border-blue-500 hover:shdow-lg hover:-translate-y-1 md:last:mr-6 last:mr-2">View Details</a>
                                 </td>
                                 <td className='md:hidden table-cell text-right last:pr-6'>
-                                    <a href="#" className="text-sm md:text-base p-2 border border-dashed border-gray-600 text-black hover:bg-blue-500 transition-all transition-duration-350 hover:border-blue-500 hover:shdow-lg hover:-translate-y-1">View </a>
+                                    <a href="#" className="text-sm md:text-base p-2 border border-dashed border-gray-600 text-black hover:bg-blue-500 transition-all transition-duration-350 hover:border-blue-500 hover:shdow-lg hover:-translate-y-1 md:last:mr-6 last:mr-2">View </a>
                                 </td>
                             </tr>
                         ))}

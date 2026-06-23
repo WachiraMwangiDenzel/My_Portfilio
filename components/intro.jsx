@@ -20,8 +20,10 @@ const skillIcon = [
 
 export default function intro() {
     return (
-        <div className=' md:ml-4 mt-20 flex flex-col md:flex-row mb-6 w-full'>
-            <div className='flex flex-col gap-4 md:w-70 w-full items-center'>
+        <div className=' md:ml-4 mt-20 flex flex-col md:flex-row mb-6 w-full '>
+
+            {/* images and social links container */}
+            <div className='flex flex-col gap-4 w-full md:w-fit items-center'>
                 <Image src="/Potrait.jpg" alt="Hi There! Image Still Loading...."
                     width={200} height={200}
                     priority
@@ -47,45 +49,75 @@ export default function intro() {
                 </div>
 
             </div>
+            {/* about me section container */}
             <div className='flex flex-col flex-1 text-black p-6 max-w-250 '>
                 <div className='flex flex-col md:flex-row justify-between w-full mb-4 '>
-                    <div className=' flex flex-col md:flex-row gap-2 items-center text-center '>
-                        <h1 className='text-3xl font-black text-blue-700'> Denzel Mwangi </h1>
-                        <p className='p-1  border border-dashed border-green-500 text-green-500 rounded-xl text-sm bg-green-100'>Open to New Front-end Roles | Hire </p>
+                    <div className=' flex flex-col md:flex-row gap-2 lg:gap-3 items-center text-center '>
+                        <h1 className='text-4xl whitespace-nowrap md:text-3xl font-sans text-blue-700 '> Denzel Mwangi </h1>
+                        <p className='p-1  border border-dashed border-green-500 text-green-500 rounded-xl text-sm bg-green-100 md:truncate'>Open to New Front-end Roles |Hire </p>
                     </div>
-                    <a href="/Denzel_Mwangi_CV.pdf" 
-                    download 
-                    className="hidden md:block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex gap-2 items-center"><Download />
-                        Download Resume
-                    </a>
+                    <div className="hidden lg:block">
+                        <a href="/Denzel_Mwangi_CV.pdf"
+                            download
+                            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex gap-2 items-center"><Download />
+                            Download Resume
+                        </a>
+                    </div>
                 </div>
-                <div className='flex md:grid w-full justify-center md:justify-start'>
-                    <p className='text-center md:text-starttext-xl text-green-500 font-semibold mb-4 ml-2'>
+                <div className='flex w-full justify-center md:justify-start'>
+                    <p className='text-center lg:text-start text-xl md:text-lg  text-green-500 font-semibold mb-4 ml-2'>
                         Web Developer |
-                        <br/><span>
+                        <br /><span className=''>
                             Basic Computer Operation Tutor
-                        </span> 
+                        </span>
                     </p>
                 </div>
                 <div>
-                    <p className='flex text-center text-lg md:text-xl text-gray-700 w-full md:w-200 '>
-                        I’m a Front-End Developer focused on building clean, responsive, and user-friendly web experiences. I enjoy turning ideas into interactive interfaces using modern technologies, and I’m constantly learning to improve my craft. <span className=' md:block hidden '>My goal is to create designs that not only look good but also solve real-world problems efficiently.</span>
-                    </p>
-                    <div className='md:block hidden flex gap-2 mt-4 flex-wrap'>
-                        {skillIcon.map((skill) => {
-                            const Icon = skill.icon;
+                    <div className="">
 
-                            return (
+                        {/* sm Screens */}
+                        <div className="md:hidden">
+                            <p className='flex text-center text-lg  text-gray-700 w-full'>
+                                I’m a Front-End Developer focused on building clean, responsive, and user-friendly web experiences. I enjoy turning ideas into interactive interfaces using modern technologies, and I’m constantly learning to improve my craft.
 
-                                <p key={skill.id} className='flex gap-2 text-gray-700 p-1.5 bg-white border border-dashed text-lg hover:bg-blue-500 hover:text-white transition-colors duration-300'>
+                            </p>
+                        </div>
 
-                                    < Icon size={25} />
+                        {/* md Screens */}
+                        <div className="sm:hidden md:block lg:hidden">
+                            <p className='text-lg text-gray-700 w-full'>
+                                I’m a Front-End Developer focused on building clean, responsive, and user-friendly web experiences. I enjoy turning ideas into interactive interfaces using modern technologies, and I’m constantly learning to improve my craft.
 
-                                    {skill.title}
-                                </p>
-                            )
-                        })}
+                            </p>
+                        </div>
+
+                        {/* Lg Screens */}
+                        <div className="hidden lg:block">
+                            <p className='flex text-center md:text-start text-lg md:text-xl text-gray-700 w-full md:w-200 '>
+                                I’m a Front-End Developer focused on building clean, responsive, and user-friendly web experiences. I enjoy turning ideas into interactive interfaces using modern technologies, and I’m constantly learning to improve my craft.My goal is to create designs that not only look good but also solve real-world problems efficiently.
+                            </p>
+                        </div>
+
                     </div>
+
+                    <div className="md:block hidden ">
+                        <div className='flex gap-2 ml-16  mt-6 flex-wrap'>
+                            {skillIcon.map((skill) => {
+                                const Icon = skill.icon;
+
+                                return (
+
+                                    <p key={skill.id} className='flex gap-2 text-gray-700 p-1.5 bg-white border border-dashed text-lg hover:bg-blue-500 hover:text-white transition-colors duration-300'>
+
+                                        < Icon size={25} />
+
+                                        <span className='hidden lg:block'>{skill.title}</span>
+                                    </p>
+                                )
+                            })}
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
